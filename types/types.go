@@ -10,7 +10,7 @@ type Model struct {
 	Parameters     map[string]float64
 	FreeParameters map[string]int
 	PlotFlags      map[string]bool
-	ChromosomeArms [NumSexes][]uint64
+	ChromosomeArms map[int]map[int][]int
 	DeathRisk      map[int]float64
 	CumulativeProb map[int]float64
 	Map            map[float64]map[float64]int
