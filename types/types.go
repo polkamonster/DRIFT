@@ -4,11 +4,13 @@ import (
 	"image"
 )
 
+
+
 type Model struct {
 	Parameters     map[string]float64
 	FreeParameters map[string]int
 	PlotFlags      map[string]bool
-	ChromosomeArms map[int]map[int][]int
+	ChromosomeArms [NumSexes][]uint64
 	DeathRisk      map[int]float64
 	CumulativeProb map[int]float64
 	Map            map[float64]map[float64]int
